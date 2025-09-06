@@ -1,0 +1,23 @@
+@import "tailwindcss";
+@reference "tailwindcss";
+
+@theme {
+  --font-sans: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --font-caveat: "Caveat", cursive;
+  --font-patrick: "Patrick Hand", cursive;
+  --font-homemade: "Homemade Apple", cursive;
+
+  --color-brand: #0ea5e9;
+  --color-brand-dark: #0284c7;
+
+  --shadow-soft: 0 8px 30px rgba(0,0,0,0.06);
+}
+
+@layer base {
+  html { @apply scroll-smooth; }
+  body { @apply min-h-screen bg-white text-gray-800 antialiased; }
+  a { @apply text-brand hover:text-brand-dark; }
+}
+
+.container-responsive { @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8; }
+
